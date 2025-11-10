@@ -1,3 +1,2 @@
-python-telegram-bot==20.7
-flask
-gunicorn
+# В терминале:
+echo "python-telegram-bot==20.8\npython-dotenv\nflask\ngunicorn" > requirements.txt
