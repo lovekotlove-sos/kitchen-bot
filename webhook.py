@@ -1,9 +1,9 @@
-import os
-from flask import Flask, request
-from telegram import Update, Bot, ReplyKeyboardMarkup, ReplyKeyboardRemove
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, ConversationHandler
-from dotenv import load_dotenv
+from flask import Flask, request, jsonify
+from telegram import Update
+from telegram.ext import Application, ContextTypes
 import asyncio
+import os
+from dotenv import load_dotenv
 
 # Загружаем секреты
 load_dotenv()
@@ -174,4 +174,5 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+
 
