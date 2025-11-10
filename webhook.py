@@ -1,5 +1,3 @@
-# Создай файл:
-touch webhook.py
 import os
 from flask import Flask, request
 from telegram import Update, Bot, ReplyKeyboardMarkup, ReplyKeyboardRemove
@@ -176,3 +174,4 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+
