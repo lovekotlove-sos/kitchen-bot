@@ -1,0 +1,2 @@
+# В терминале:
+echo "web: gunicorn webhook:app" > Procfile
